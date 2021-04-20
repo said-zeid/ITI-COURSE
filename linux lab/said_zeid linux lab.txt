@@ -1,0 +1,153 @@
+Q1                                                                 //## Great Explanation ##//
+cat:creat new file or display its content
+more:also display the file but you can navigate it usng the keyboard 
+
+
+
+Q2                           //## Excellent ##//
+cd ~
+pwd
+
+
+
+Q3                         //## keep in mind that /home is not user home directory , the home directory is /home/<your pc name> or cd ##//
+mkdir -p Home/SAMPLE                   --------> mkdir ~/sample   <Q3 is excellent>
+
+or
+cd Home
+mkdir SAMPLE
+
+
+
+
+Q4                     ----------> mkdir ~/SAMPLE/HELLO
+cd Home/SAMPLE
+mkdir HELLO
+
+
+
+Q5                                        
+mkdir -p Home/SAMPLE/HELLO        -------->      mkdir -p /home/<your pc name>/Sample/Hello     //## Excellent ##//
+
+
+
+Q6                                        //## Excellent ##//
+rmdir Hello
+or
+rm -r Hello
+
+
+
+Q7                                        //## Excellent ##//
+mkdir -p SAMPLE/HELLO
+
+
+
+Q8                                               //## Excellent ##//
+by adding .(dot) before the file name 
+
+ex:
+mkdir .filename
+
+
+
+Q9                                                 //## Excellent ##//
+
+rm is general     ->>   rm [OPTION]... [FILE]...
+rm - remove files or directories
+
+but
+rmdir [OPTION]... DIRECTORY...
+ Remove  the  DIRECTORY(ies),  if
+       they are empty.
+
+     
+     
+Q10                                         //## V.Good ##//
+mkdir -p dir/dir1/file1
+cd dir
+mkdir dir2
+
+cd ~
+mkdir -p docs/WS-ITI
+
+
+
+
+Q11                                          //## Excellent ##//
+cd dir
+rm -r dir1
+
+
+
+
+Q12                                          //## Excellent ##//
+
+cd dir
+rmdir -p dir2
+
+
+
+Q13
+
+                                          //## Read the question carefuly  ##//
+
+                                 ------>                      first make dir ITI_WS in Downloads : mkdir -p ~/Downloads/ITI_WS
+                                 ------>                      relative: cd Downloads/ITI_WS/
+                                 ------>                      abs:cd /home/ubuntu/Downloads/ITI_WS/
+
+absolute:
+Home/Download/WS_ITI
+
+
+
+relative:
+cd Downloads
+cd WS_ITI
+
+
+
+
+Q14
+sudo cp /home/said/the/etc/passwd /Home/said/my_psswd       -----> cp etc/passwd /home/said/my_passwd
+mv my_psswd old_passwd                  //## Excellent ##//
+
+
+
+
+Q15
+cd
+cd~
+cd.. twice      ---------> cd /home/said
+
+
+
+
+Q16
+cat bin | grep w*  -------------------> ls /usr/bin/w*
+
+
+
+
+Q17
+head -4 home/said/etc/passwd       -------------------> head -4 /etc/passwd
+
+
+
+
+Q18   
+head -7 home/said/etc/passwd          ----------------> tail -7 /etc/passwd
+
+
+
+
+Q19
+cd
+cat said_ITI > my_code.text
+cat my_code.text | grep said_ITI         ---------------> grep -r 'said_ITI'
+
+
+
+
+
+
